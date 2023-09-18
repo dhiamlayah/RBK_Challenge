@@ -1,14 +1,13 @@
+import { Outlet } from "react-router-dom";
 import PhoneResult from "../Components/PhoneResult";
-
+import "../Design/ProfileCreation.css";
 const ProfileCreation = () => {
-    return (  
-       <div className="d-flex">
-            <PhoneResult/>
-            
+  return (
+    <div className="Profile">
+      <PhoneResult />
+      <Outlet/> 
+    </div>
+  );
+};
 
-
-       </div>
-    );
-}
- 
 export default ProfileCreation;

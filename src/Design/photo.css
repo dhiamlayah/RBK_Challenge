@@ -14,8 +14,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     height: 100%;
-    width:29vh;
+    width:38vh;
     margin-top: 5%;
+    overflow: hidden
+
 
 }
 
@@ -39,9 +41,13 @@
     .size{
          width: 50%;
          height: 88vh;
-         margin-left: 5%;   
+         margin-left: 5%; 
+         overflow: hidden  
     }
- 
+    #buttons{
+      width: 120px;
+    }
+  
  
   }
 
@@ -52,7 +58,11 @@
          height: 88vh;
         display: flex;
         justify-content: center;
+        overflow: hidden
         
     }
-
+    #buttons{
+      width: 120px;
+    }
+  
   }

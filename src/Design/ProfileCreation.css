@@ -1,0 +1,12 @@
+
+@media (min-width : 850px) {
+    .Profile{
+        display: flex;    
+    }
+}
+
+@media (max-width:850px ) and (min-width : 720px) {
+    .Profile{
+        display: block;    
+    }
+}
