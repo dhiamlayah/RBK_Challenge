@@ -4,8 +4,6 @@ const Preview = () => {
     return ( 
         <div id="preview">
             <PhoneResult/>
-            <i className="fa-solid fa-code-merge text-dark"></i>      
-            
           </div>
      );
 }

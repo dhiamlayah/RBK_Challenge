@@ -36,8 +36,8 @@ const Profile = () => {
       <label htmlFor="Images" className="fw-bold"> Profile picture: </label>
 
       <div className="d-block mx-5" id="picture" onClick={onUplodeImage}>
-        <img src='' alt="picture" />
-        <input type="file" ref={Input_Img} className="d-none"  onChange={handleClick} />
+      <i class="fa fa-image" id="icon"></i>
+      <input type="file" ref={Input_Img} className="d-none"  onChange={handleClick} />
       </div>
       </div>
     

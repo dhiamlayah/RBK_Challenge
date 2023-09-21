@@ -44,11 +44,9 @@ const AddLinks = (props) => {
   const handleClose = ()=>{
     props.setOpen(false)
   }
-
   const redirectUser =()=>{
         props.setOpen(false)
   }
-
   const backGround = ()=>{
     if(error){return 'bg-danger'}
     return ''
@@ -79,8 +77,8 @@ const AddLinks = (props) => {
             value={platforms}
             onChange={handleChangePlatforms}
           >
-            <option value="">Choose...</option>
-            <option value='github'>GitHub </option>
+            <option value="">Choose...</option>        
+            <option value='github'> GitHub </option>
             <option value='facebook' >FaceBook</option>
             <option value='youtube'>Youtube</option>
             <option value='linkdin'>Linkdin</option>
