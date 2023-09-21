@@ -3,3 +3,12 @@
         width: 50%;
     }
 }
+
+#picture{
+    border:  #eb99ff 2px solid;
+    border-radius: 10px;
+    width: 20%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}

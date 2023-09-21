@@ -2,7 +2,7 @@
 #photo {
     display: flex;
     justify-content: center;
-    padding-top: 28%;
+    padding-top: 20%;
   }
 
 #links {
@@ -13,7 +13,7 @@
     background-image: url('../../public/images/phone.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 50rem;
     width:38vh;
     margin-top: 5%;
     overflow: hidden
@@ -46,6 +46,8 @@
     }
     #buttons{
       width: 120px;
+      padding-top: 1px;
+      height: 30px;
     }
   
  
@@ -63,6 +65,8 @@
     }
     #buttons{
       width: 120px;
+      padding-top: 1px;
+      height: 30px;
     }
   
   }

@@ -7,14 +7,13 @@ const AddLinks = (props) => {
   const  [link,setLink]=useState('')
   const [error,setError]=useState(null)
   const {setAllLinks ,allLinks} = useContext(globalComponent)
+
   const handleChangePlatforms=(e)=>{
       setPlatforms(e.target.value)
   }
-
   const handleChangeLinks = (e)=>{
     setLink(e.target.value)
   }
-
   const handleErrors = (platform)=>{
     let linkExist = false
     allLinks.map((link)=>{
@@ -22,11 +21,16 @@ const AddLinks = (props) => {
     })
     return linkExist
   }
-
   const handleClick =()=>{
    const  errorExist = handleErrors(platforms)
     if(errorExist){
       return setError("Platform Already Exist :'( ")
+    }
+    if(platforms===''){
+      return setError("Please choose platform ")
+    }
+    if(link===''){
+      return setError('please put the link')
     }
     setAllLinks(prevAllLinks=>[
       ...prevAllLinks,{
@@ -37,6 +41,10 @@ const AddLinks = (props) => {
     redirectUser()
 
   }
+  const handleClose = ()=>{
+    props.setOpen(false)
+  }
+
   const redirectUser =()=>{
         props.setOpen(false)
   }
@@ -55,8 +63,9 @@ const AddLinks = (props) => {
         marginTop: "24px",
         borderRadius: "20px",
       }}
-    >
+    >                                
       <div className="my-2">
+          <p className="text-end z-2" onClick={handleClose}>close</p>   
           {!error && <h5>Link #{props.number}</h5>}
           {error && <h4 className="text-center text-white">{error}</h4>}
         <label htmlFor="inputGroupSelect04" className="form-label">
@@ -71,7 +80,7 @@ const AddLinks = (props) => {
             onChange={handleChangePlatforms}
           >
             <option value="">Choose...</option>
-            <option value='github'>GitHub</option>
+            <option value='github'>GitHub </option>
             <option value='facebook' >FaceBook</option>
             <option value='youtube'>Youtube</option>
             <option value='linkdin'>Linkdin</option>
@@ -92,11 +101,8 @@ const AddLinks = (props) => {
               onChange={handleChangeLinks}
             />
           </div>
-          
         </div>
-        <button className="btn btn-success mt-2" onClick={handleClick}> Save </button>
-       
-
+       <button className="btn btn-success mt-2" onClick={handleClick}> Save </button> 
       </div>
     </div>
   );
