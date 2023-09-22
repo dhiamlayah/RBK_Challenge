@@ -1,11 +1,11 @@
 @media (min-width : 720px)  {
     #profileData{
-        width: 50%;
+        width: 45%;
     }
 }
 
 #picture{
-    border:  #eb99ff 2px solid;
+    border:  #060506 2px solid;
     border-radius: 10px;
     width: 20%;
     height: 100px;

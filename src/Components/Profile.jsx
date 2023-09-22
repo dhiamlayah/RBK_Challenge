@@ -32,16 +32,16 @@ const Profile = () => {
         <p>Add your details to create a personnal touch to  your profile</p>
       </div>
   
-      <div className=" mb-3 p-2 rounded-2 d-flex" style={{ backgroundColor: "#dedede70" }}>
+      <div className=" mb-3 p-2 rounded-2 d-flex" style={{ backgroundColor: "#e9e9e9" }}>
       <label htmlFor="Images" className="fw-bold"> Profile picture: </label>
 
       <div className="d-block mx-5" id="picture" onClick={onUplodeImage}>
       <i class="fa fa-image" id="icon"></i>
-      <input type="file" ref={Input_Img} className="d-none"  onChange={handleClick} />
+      <input type="file" accept="image/*" ref={Input_Img} className="d-none"  onChange={handleClick} />
       </div>
       </div>
     
-      <div className="mb-3 p-2 rounded-2" style={{ backgroundColor: "#dedede70" }}>
+      <div className="mb-3 p-2 rounded-2" style={{ backgroundColor: "#e9e9e9" }}>
         <div className="d-flex pt-2">
           <label htmlFor="FirstName" className="form-label fw-bold p-1 px-2">
             FirstName:
