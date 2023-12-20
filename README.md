@@ -1,8 +1,8 @@
-                                ###     SMALL-PROFILE    ###
+# SMALL-PROFILE    
 
 this prject is just a challenge during 24 hours 
 
-# What Is Small-Profile
+## What Is Small-Profile
 
 How you can add your links and information like picture ,fullname and email in small phone
 then see your result 
